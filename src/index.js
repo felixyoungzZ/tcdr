@@ -38,21 +38,32 @@ async function showAll() {
   fx('fx', data.definitions);
 }
 
-
+let result;
 function getPropertyContentOfData(data, property) {
+  for (let key in data) {
 
-  // return `Error: Unknown property ${ property } in tsconfig.json.\n`;
+    if (key === property) {
+      result = data[key];
+      return;
+    }
+
+    if (data[key] && typeof data[key] === 'object') {
+      getPropertyContentOfData(data[key], property);
+    }
+
+  }
 }
+
 async function showSpecificResult(property) {
   const data = await getData();
-  const propertyContent = getPropertyContentOfData(data, property);
+  getPropertyContentOfData(data.definitions, property);
 
-  if (typeof propertyContent === "object") {
-    fx(property, propertyContent);
+  if (typeof result === "object") {
+    fx(property, result);
     return;
   }
 
-  // stdout.write(propertyContent);
+  stdout.write(`Error: Unknown property ${ property } in tsconfig.json.\n`);
 }
 
 const args = argv.slice(2);
