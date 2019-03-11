@@ -1,0 +1,17 @@
+{
+  "name": "tcdr",
+  "version": "0.0.1",
+  "description": "A cli to check the usage of tsconfig.json",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig"
+  ],
+  "author": "felix",
+  "license": "MIT",
+  "dependencies": {
+    "fx": "^13.0.0"
+  }
+}
