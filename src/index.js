@@ -38,6 +38,7 @@ async function showAll() {
   fx('fx', data.definitions);
 }
 
+// TODO: fix recursive function
 let result;
 function getPropertyContentOfData(data, property) {
   for (let key in data) {
