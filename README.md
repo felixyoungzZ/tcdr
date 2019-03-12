@@ -3,6 +3,8 @@
 
 > 单纯自己试手做的一个小命令行工具，提升自己的 `typescript` 开发体验。
 
+[![NPM](https://nodei.co/npm/tcdr.png)](https://nodei.co/npm/tcdr/)
+
 ## 用法
 ```sh
 # 展示所有的 tsconfig.json 的选项
