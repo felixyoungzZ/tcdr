@@ -1,9 +1,9 @@
+[![NPM](https://nodei.co/npm/tcdr.png)](https://nodei.co/npm/tcdr/)
+
 # tcdr
 "TsConfig.json Don't Read" -- A cli to check the usage of tsconfig.json built with [fx](https://github.com/antonmedv/fx).
 
 > 单纯自己试手做的一个小命令行工具，提升自己的 `typescript` 开发体验。
-
-[![NPM](https://nodei.co/npm/tcdr.png)](https://nodei.co/npm/tcdr/)
 
 ## 用法
 ```sh
