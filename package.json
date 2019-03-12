@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A cli to check the usage of tsconfig.json",
   "main": "index.js",
+  "bin": {
+    "tcdr": "./bin/app"
+  },
   "scripts": {},
   "keywords": [
     "typescript",
