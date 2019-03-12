@@ -1,9 +1,6 @@
 const {
   argv,
-  stdin,
   stdout,
-  stderr,
-  exit,
 }  = require('process');
 const path = require('path');
 const { get } = require('./libs/request');
